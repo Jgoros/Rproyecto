@@ -19,7 +19,11 @@
 # This function must return a list with the information needed to 
 # solve the problem.
 # (Depending on the problem, it should receive or not parameters)
-initialize.problem = function(){
+mat <- scan("data/sudoku-1.txt", sep=",")
+mat <- matrix(mat, ncol=9, byrow=T)
+mat
+
+initialize.problem = function(file){
   problem = list()
   return(problem)
 }
