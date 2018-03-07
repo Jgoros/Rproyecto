@@ -19,8 +19,8 @@
 # This function must return a list with the information needed to 
 # solve the problem.
 # (Depending on the problem, it should receive or not parameters)
-mat <- scan("data/sudoku-1.txt", sep=",")
-mat <- matrix(mat, ncol=9, byrow=T)
+mat = scan("data/sudoku-1.txt", sep=",")
+mat = matrix(mat, ncol=9, byrow=T)
 mat
 
 initialize.problem = function(file){
@@ -31,6 +31,9 @@ initialize.problem = function(file){
 # =======================================================================
 # Must return TRUE or FALSE according with if the action can be done or not
 # over the specific state
+#state es elsudoku
+#action 1-9
+#problem no se
 is.applicable = function (state,action,problem){
   return(TRUE)
 }
